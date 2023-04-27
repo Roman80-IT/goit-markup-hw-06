@@ -1,2 +1,2 @@
-# goit-markup-hw-05
-Positioned Items & Animation
+# goit-markup-hw-06
+Forms & Validation
