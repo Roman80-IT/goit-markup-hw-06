@@ -338,11 +338,13 @@ section {
   background-color: var(--backdrop);
   transition: opacity var(--anim-function), visibility var(--anim-function);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal {
   position: absolute;
   top: 50%;
@@ -359,11 +361,13 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .modal-icon {
   width: 24px;
   height: 24px;
   margin-left: auto;
 }
+
 .modal-btn {
   display: flex;
   align-items: center;
@@ -380,9 +384,11 @@ section {
 
   transition: color var(--anim-function), background var(--anim-function);
 }
+
 .icon-close {
   fill: currentColor;
 }
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--hover-btn);
@@ -434,19 +440,23 @@ section {
   border-radius: 4px;
   transition: border var(--anim-function);
 }
+
 .form-input-svg {
   position: absolute;
   top: 26px;
   left: 16px;
   transition: fill var(--anim-function);
 }
+
 .modal-form-field:focus-within .form-input-svg {
   fill: var(--btn-color);
 }
+
 .modal-form-input:focus {
   outline: none;
   border-color: var(--btn-color);
 }
+
 .modal-form-area {
   display: flex;
   flex-wrap: wrap;
@@ -465,10 +475,12 @@ section {
   border-radius: 4px;
   transition: border-color var(--anim-function);
 }
+
 .modal-form-msg:focus {
   outline: none;
   border-color: var(--btn-color);
 }
+
 .modal-form-msg::placeholder {
   color: rgba(46, 47, 66, 0.4);
 }
@@ -480,6 +492,7 @@ section {
   align-items: center;
   margin-bottom: 24px;
 }
+
 .modal-checkbox-border {
   position: relative;
   display: inline-block;
@@ -494,6 +507,7 @@ section {
   cursor: pointer;
   transition: border var(--anim-function), background-color var(--anim-function);
 }
+
 .modal-checkbox-svg {
   position: absolute;
   top: -1px;
@@ -868,8 +882,7 @@ section {
 
   margin-left: 24px;
 
-  /* IRIS */
-  background: #4d5ae5;
+  background: var(--btn-color);
   border-radius: 4px;
   border: none;
   color: var(--white-color);
