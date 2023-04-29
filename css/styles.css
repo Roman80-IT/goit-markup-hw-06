@@ -209,7 +209,7 @@ address {
 
 /* == підкреслення меню навігації == */
 /* .menu-link  */
-.current::after {
+.active::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -222,7 +222,7 @@ address {
 }
 
 /* == синій колір разом із підкресленням меню навігації == */
-.menu-link.current {
+.menu-link.active {
   color: var(--hover-btn);
 }
 
