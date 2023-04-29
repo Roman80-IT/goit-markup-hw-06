@@ -810,6 +810,72 @@ section {
   fill: var(--light-font);
 }
 
+/* Subscribe */
+
+.subscribe {
+  display: block;
+}
+
+.subscribe-title {
+  margin-bottom: 16px;
+
+  color: var(--white-color);
+}
+
+.form-sub {
+  width: 240px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid var(--white-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  color: var(--white-color);
+  background-color: var(--heading-color);
+
+  transition: background var(--anim-function);
+}
+
+.form-sub::placeholder {
+  display: flex;
+  align-items: center;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+
+  color: var(--white-color);
+}
+
+.subscr-btn {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 24px;
+  gap: 16px;
+
+  margin-left: 24px;
+
+  /* IRIS */
+  background: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  color: var(--white-color);
+  cursor: pointer;
+
+  transition: background var(--anim-function);
+}
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: var(--hover-btn);
+}
+
+.subscr-icon {
+  fill: var(--white-color);
+}
+
 /**
   |============================
   | PAGE2 - PORTFOLIO
