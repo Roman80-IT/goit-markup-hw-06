@@ -189,15 +189,20 @@ address {
   position: relative;
   display: flex;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  text-decoration: none;
 
   color: var(--heading-color);
   padding: 24px 0;
 
   transition: color 250ms var(--сubic);
+}
+
+.menu-font {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .menu-link:hover,
@@ -322,7 +327,7 @@ section {
   color: var(--white-color);
 }
 
-/* ========== modal window ========== */
+/* ========== Modal window ========== */
 .backdrop {
   position: fixed;
   top: 0;
@@ -384,6 +389,20 @@ section {
   background-color: var(--hover-btn);
   color: var(--light-font);
   cursor: pointer;
+}
+
+/* ======== Modal forms ======== */
+
+.modal-text {
+  margin-bottom: 16px;
+  text-align: center;
+
+  color: var(--heading-color);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 /**
@@ -620,12 +639,6 @@ section {
 }
 
 .footer-social-title {
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--white-color);
   margin-bottom: 16px;
 }
