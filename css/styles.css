@@ -306,6 +306,7 @@ section {
   padding: 16px 32px;
   margin: 0 auto;
 
+  color: var(--white-color);
   background-color: var(--btn-color);
   cursor: pointer;
 
@@ -324,7 +325,6 @@ section {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--white-color);
 }
 
 /* ========== Modal window ========== */
@@ -504,11 +504,11 @@ section {
   transition: opacity var(--anim-function);
 }
 
-.modal-form-chack:checked + .modal-checkbox-border {
+.modal-form-check:checked + .modal-checkbox-border {
   border: 1px solid var(--btn-color);
   background-color: var(--btn-color);
 }
-.modal-form-chack:checked + .modal-checkbox-border > .modal-checkbox-svg {
+.modal-form-check:checked + .modal-checkbox-border > .modal-checkbox-svg {
   opacity: 1;
 }
 
@@ -521,13 +521,6 @@ section {
 
   width: 169px;
   height: 56px;
-
-  /* Button Text */
-
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
 
   margin: 0 auto;
 
@@ -846,12 +839,6 @@ section {
 
   padding: 12px 24px;
   /* min-width: 69px; */
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
 
   color: var(--btn-color);
   background: var(--light-font);
