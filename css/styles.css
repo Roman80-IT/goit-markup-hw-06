@@ -222,7 +222,7 @@ address {
 }
 
 /* == синій колір разом із підкресленням меню навігації == */
-.menu-link.link.current {
+.menu-link.current {
   color: var(--hover-btn);
 }
 
