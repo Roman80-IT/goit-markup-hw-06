@@ -750,11 +750,15 @@ section {
 .footer-section .container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+}
+
+/* LOGO */
+
+.footer-logo-box {
+  margin-right: 120px;
 }
 
 .logo-footer {
-  /* display: flex; */
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -769,6 +773,12 @@ section {
   letter-spacing: 0.02em;
   color: var(--light-font);
   max-width: 264px;
+}
+
+/* social-box  */
+
+.footer-social-box {
+  margin-right: 80px;
 }
 
 .footer-social-title {
