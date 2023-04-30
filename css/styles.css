@@ -310,7 +310,7 @@ section {
   background-color: var(--btn-color);
   cursor: pointer;
 
-  transition: background var(--anim-function);
+  transition: background-color var(--anim-function);
 }
 
 .btn:hover,
@@ -475,7 +475,7 @@ section {
   border-color: var(--btn-color);
 }
 
-/* Comment */
+/* Comment input */
 .modal-form-area {
   display: flex;
   flex-wrap: wrap;
@@ -721,7 +721,7 @@ section {
   background-color: var(--btn-color);
   border-radius: 50%;
 
-  transition: background var(--anim-function);
+  transition: background-color var(--anim-function);
 }
 
 .link-icon:hover,
@@ -854,7 +854,7 @@ section {
 
   background-color: var(--btn-color);
 
-  transition: background var(--anim-function);
+  transition: background-color var(--anim-function);
 }
 
 .footer-social-link:hover,
@@ -878,8 +878,18 @@ section {
   color: var(--white-color);
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subscribe-label {
+  display: block;
+}
+
 .form-sub {
-  width: 240px;
+  width: 264px;
   height: 40px;
   padding-left: 16px;
   border: 1px solid var(--white-color);
@@ -889,7 +899,7 @@ section {
   color: var(--white-color);
   background-color: var(--heading-color);
 
-  transition: background var(--anim-function);
+  transition: background-color var(--anim-function);
 }
 
 .form-sub::placeholder {
@@ -904,8 +914,9 @@ section {
   color: var(--white-color);
 }
 
-.subscr-btn {
-  display: inline-flex;
+.subscribe-btn {
+  display: block;
+  /* display: inline-flex; */
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -914,20 +925,26 @@ section {
 
   margin-left: 24px;
 
-  background: var(--btn-color);
+  background-color: var(--btn-color);
   border-radius: 4px;
   border: none;
+  /* border: 0; */
   color: var(--white-color);
   cursor: pointer;
 
-  transition: background var(--anim-function);
+  transition: background-color var(--anim-function);
+
+  /* ------------------------------------- */
+  display: flex;
+  align-items: center;
 }
-.subscr-btn:hover,
-.subscr-btn:focus {
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
   background-color: var(--hover-btn);
 }
 
-.subscr-icon {
+.subscribe-icon {
   fill: var(--white-color);
 }
 
@@ -968,7 +985,7 @@ section {
   border: 1px solid var(--portfolio-bgc);
   border-radius: 4px;
 
-  transition: color var(--anim-function), background var(--anim-function),
+  transition: color var(--anim-function), background-color var(--anim-function),
     border var(--anim-function), box-shadow var(--anim-function);
 }
 
