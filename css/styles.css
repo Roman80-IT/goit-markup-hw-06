@@ -353,13 +353,19 @@ section {
   transform: translate(-50%, -50%);
 
   min-width: 408px;
-  min-height: 576px;
-  padding: 24px;
+  /* width: 408px;
+  min-height: 576px; */
+  padding: 72px 24px 24px 24px;
 
-  background: #fcfcfc;
+  background-color: #fcfcfc;
+  /* Краще загальну властивість "background:" не використовувати! */
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  /* transition: scale 5000ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 5000ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .modal-icon {
@@ -418,11 +424,14 @@ section {
   flex-direction: column;
 }
 
+/* Форма (назва, іконка, поле, текст вводу) */
 .modal-form-field {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 8px;
+
+  color: var(--heading-color);
 }
 
 .modal-text {
@@ -453,6 +462,7 @@ section {
   position: absolute;
   top: 26px;
   left: 16px;
+  fill: currentColor;
   transition: fill var(--anim-function);
 }
 
@@ -465,12 +475,16 @@ section {
   border-color: var(--btn-color);
 }
 
+/* Comment */
 .modal-form-area {
   display: flex;
   flex-wrap: wrap;
 
   margin-bottom: 16px;
+
+  color: var(--heading-color);
 }
+
 .modal-form-msg {
   resize: none;
   width: 100%;
@@ -523,6 +537,16 @@ section {
   background-size: contain;
   opacity: 0;
   transition: opacity var(--anim-function);
+}
+
+.modal-text a {
+  color: var(--btn-color);
+  transition: color var(--anim-function);
+}
+
+.modal-text a:hover,
+.modal-text a:focus {
+  color: var(--hover-btn);
 }
 
 .modal-form-check:checked + .modal-checkbox-border {
